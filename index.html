@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZekInk — Ağıllı Qələm və Öyrənmə Yoldaşı</title>
+  <meta name="description" content="ZekInk ağıllı qələm və mobil tətbiqdən ibarət sistemdir. Ev tapşırıqları zamanı diqqəti qorumağa kömək edir və valideynlər/müəllimlər üçün aydın göstəricilər təqdim edir." />
+  <meta property="og:title" content="ZekInk" />
+  <meta property="og:description" content="Diqqəti izləyin, öyrənməni gücləndirin. Ekransız yazı, ölçülə bilən nəticələr." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Crect width='100%25' height='100%25' fill='%23ffffff'/%3E%3Cpath d='M60 180 L196 44 L212 60 L76 196 L60 196 Z' fill='%23E11D48'/%3E%3Ccircle cx='88' cy='168' r='8' fill='%231E40AF'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="ZekInk Ana Səhifə">
+        <div class="brand-logo-box" aria-hidden="true">Logo</div>
+        <span class="brand-text">ZekInk</span>
+      </a>
+
+      <nav class="nav" aria-label="Əsas naviqasiya">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Menyunu aç/bağla</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#features">Xüsusiyyətlər</a></li>
+          <li><a href="#how">Necə işləyir</a></li>
+          <li><a href="#story">Hekayəmiz və Vizyonumuz</a></li>
+          <li><a href="#tech">Texnologiya</a></li>
+          <li><a href="#app">Mobil Tətbiq</a></li>
+          <li><a href="#pricing">Qiymətlər</a></li>
+          <li><a href="#faq">Tez-tez verilən suallar</a></li>
+          <li><a class="btn btn--small" href="#contact">Əlaqə</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Daha çox diqqət, <span class="accent">daha çox nailiyyət.</span></h1>
+        <p class="lead">
+          ZekInk — <strong>ağıllı qələm</strong> və <strong>mobil tətbiqdən</strong> ibarət bir sistemdir. Bu həll uşaqların ev tapşırıqları zamanı diqqətlərini qoruyaraq öyrənmə prosesini daha məhsuldar və səmərəli edir.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn--primary">Demo sifariş et</a>
+          <a href="#features" class="btn btn--ghost">Xüsusiyyətlər</a>
+        </div>
+
+        <div class="trust">
+          <span></span>
+          <div class="badges"></div>
+        </div>
+      </div>
+
+      <div class="hero-media card reveal" data-reveal="zoom">
+        <div class="device">
+          <div class="device-status">
+            <span class="dot"></span> Qoşulub
+          </div>
+          <div class="device-metrics">
+            <div>
+              <div class="metric-label">Təzyiq</div>
+              <div class="metric-value">62%</div>
+            </div>
+            <div>
+              <div class="metric-label">Diqqət</div>
+              <div class="metric-value">A+</div>
+            </div>
+            <div>
+              <div class="metric-label">Sessiya</div>
+              <div class="metric-value">34 dəq</div>
+            </div>
+          </div>
+          <div class="chart-placeholder" role="img" aria-label="İrəliləyiş qrafiki">
+            <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+              <polyline points="0,90 40,80 80,85 120,60 160,70 200,45 240,30 280,40 320,20"
+                        fill="none" stroke="currentColor" stroke-width="3" opacity="0.9"/>
+              <circle cx="320" cy="20" r="5" />
+            </svg>
+          </div>
+        </div>
+        <p class="caption">Ani bildirişlər sayəsində şagirdlər qələm tutuşunu və yazı sürətini dərhal tənzimləyə bilirlər.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Niyə ZekInk?</h2>
+      <p class="section-desc">Şagirdlərin yazı vərdişlərini izləyərək onların diqqəti və öyrənməsi haqqında dəqiq, ölçülə bilən məlumat təqdim edir.</p>
+
+      <div class="grid features-grid">
+        <article class="feature card reveal" data-reveal="up">
+          <div class="icon pen"></div>
+          <h3>Diqqət İzləmə</h3>
+          <p>FSR sensorları və akselerometr yazı təzyiqi və hərəkətləri ölçərək diqqət yayınması və fokus itkisini müəyyən edir.</p>
+        </article>
+
+        <article class="feature card reveal" data-reveal="up">
+          <div class="icon focus"></div>
+          <h3>Rutin və Bildirişlər</h3>
+          <p>Sessiya izləmə dərs vaxtını və fasilələri göstərir. Daxili siqnal cihazı diqqət azaldıqda uşağı nəzakətlə dərsə qaytarır — əlavə valideyn müdaxiləsi tələb olunmur.</p>
+        </article>
+
+        <article class="feature card reveal" data-reveal="up">
+          <div class="icon cloud"></div>
+          <h3>Bulud Sinxronizasiya</h3>
+          <p>Firebase üzərindən təhlükəsiz sinxronizasiya — valideyn görüntüsü və hesabat ixracı ilə.</p>
+        </article>
+
+        <article class="feature card reveal" data-reveal="up">
+          <div class="icon shield"></div>
+          <h3>Məxfilik Əsasdır</h3>
+          <p>Məlumatlar ötürülərkən və saxlanarkən şifrələnir. Paylaşım tamamilə sizin nəzarətinizdədir.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZekInk – Solution / Features Section -->
+  <section class="zekink-solution" id="solution">
+    <div class="zk-container">
+      <h2>ZekInk ev tapşırıqlarını daha səmərəli edir</h2>
+      <p class="zk-intro">
+        ZekInk, ağıllı qələmi və valideyn/müəllimlər üçün mobil tətbiqi birləşdirərək ev tapşırıqlarını daha effektiv edir:
+      </p>
+
+      <div class="zk-grid">
+        <!-- Card 1 -->
+        <article class="zk-card">
+          <div class="zk-icon" aria-hidden="true">✍️</div>
+          <h3>Diqqət İzləmə</h3>
+          <p>Sensorlar fokus itkisini, stres və yayınmaları aşkarlayır.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="zk-card">
+          <div class="zk-icon" aria-hidden="true">🔔</div>
+          <h3>Bildirişlər</h3>
+          <p>Ani xəbərdarlıqlar uşağın dərsə qayıtmasına kömək edir.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="zk-card">
+          <div class="zk-icon" aria-hidden="true">📲</div>
+          <h3>Sessiya İzləmə</h3>
+          <p>Ev tapşırığı müddəti, fasilələr və davamlılıq izlənir.</p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="zk-card">
+          <div class="zk-icon" aria-hidden="true">📊</div>
+          <h3>Panellər və Hesabatlar</h3>
+          <p>Valideynlər və müəllimlər üçün aydın göstəricilər və tendensiyalar.</p>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="zk-card">
+          <div class="zk-icon" aria-hidden="true">🚫</div>
+          <h3>Ekransız Təcrübə</h3>
+          <p>Uşaq təbii olaraq kağız üzərində yazır, ekran yayındırmır.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- (Styles for solution / story / pricing reused from your existing CSS) -->
+  <style>
+    :root{
+      --zk-bg:#0b1220;
+      --zk-card:#121a2b;
+      --zk-accent:#e43d4f;
+      --zk-text:#e8eefc;
+      --zk-muted:#b8c2d9;
+      --zk-border:rgba(255,255,255,0.08);
+    }
+    .zekink-solution{
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(228,61,79,0.12), transparent 50%) ,
+                  radial-gradient(900px 500px at 110% 10%, rgba(76,110,245,0.12), transparent 40%),
+                  var(--zk-bg);
+      color: var(--zk-text);
+      padding: clamp(48px, 6vw, 96px) 16px;
+    }
+    .zk-container{ max-width:1100px; margin:0 auto; }
+    .zekink-solution h2{
+      font-size: clamp(28px, 3.4vw, 40px);
+      line-height: 1.15; margin:0 0 12px; letter-spacing:.2px;
+    }
+    .zk-intro{ color:var(--zk-muted); font-size:clamp(16px,1.6vw,18px); margin:0 0 28px; max-width:68ch; }
+    .zk-grid{ display:grid; gap:16px; grid-template-columns: repeat(12,1fr); }
+    .zk-card{
+      grid-column: span 12;
+      background: linear-gradient(180deg, var(--zk-card), rgba(18,26,43,0.85));
+      border: 1px solid var(--zk-border);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      position: relative; overflow: hidden;
+    }
+    .zk-card::after{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(300px 140px at 0% 0%, rgba(228,61,79,0.10), transparent 60%);
+      pointer-events:none; opacity:.7;
+    }
+    .zk-card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(228,61,79,0.35);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+    .zk-icon{
+      width:48px; height:48px; display:grid; place-items:center;
+      font-size:24px; border-radius:12px;
+      background: rgba(228,61,79,0.12);
+      border:1px solid rgba(228,61,79,0.35);
+      margin-bottom:12px;
+    }
+    .zk-card h3{ margin:0 0 6px; font-size:18px; letter-spacing:.2px; }
+    .zk-card p{ margin:0; color:var(--zk-muted); font-size:15.5px; line-height:1.55; }
+    @media (min-width: 640px){ .zk-card{ grid-column: span 6; } }
+    @media (min-width: 960px){ .zk-card{ grid-column: span 4; } }
+  </style>
+
+  <!-- How It Works -->
+  <section id="how" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Necə işləyir</h2>
+      <div class="steps grid">
+        <div class="step reveal" data-reveal="up">
+          <div class="step-num">1</div>
+          <h4>Qələmi qoşun</h4>
+          <p>ESP32 əsaslı ZekInk qələmini tətbiqlə sinxronlaşdırın.</p>
+        </div>
+        <div class="step reveal" data-reveal="up">
+          <div class="step-num">2</div>
+          <h4>Adi qaydada yazın</h4>
+          <p>İstənilən dəftərdə yazarkən sensorlar təzyiqi və hərəkəti qeydə alır.</p>
+        </div>
+        <div class="step reveal" data-reveal="up">
+          <div class="step-num">3</div>
+          <h4>Ani rəy alın</h4>
+          <p>Bildirişlər qələm tutuşunu və yazı sürətini tənzimləməyə kömək edir; həftəlik hesabatlar irəliləyişi göstərir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story & Vision (matches zekink-solution design) -->
+  <section class="zk-story" id="story">
+    <div class="zk-container">
+      <h2>Hekayəmiz və Vizyonumuz</h2>
+
+      <div class="zk-grid">
+        <!-- Our Story -->
+        <article class="zk-card">
+          <h3>Hekayəmiz</h3>
+          <p>
+            ZekInk ideyası sadə bir müşahidədən doğdu: uşaqlar ev tapşırıqlarını edərkən tez-tez diqqətləri yayınır, valideynlər və müəllimlər isə bunu izləməkdə çətinlik çəkirlər. Biz uşaqların təbii yazı vərdişlərini dəyişmədən öyrənməni dəstəkləyən bir vasitə yaratmaq istədik. Bu gün ZekInk yalnız rutinləri izləmir, həm də valideyn və müəllimlərə faydalı rəy təqdim edir — bütün bunlar şagird üçün ekransız təcrübə ilə baş verir.
+          </p>
+        </article>
+
+        <!-- Our Vision -->
+        <article class="zk-card">
+          <h3>Vizyonumuz</h3>
+          <p>
+            Hər bir şagirdin öyrənmə ritmini anlayan və onu davamlı uğura yönəldən ağıllı yoldaşa çevrilmək.
+          </p>
+        </article>
+
+        <!-- Our Mission -->
+        <article class="zk-card">
+          <h3>Missiyamız</h3>
+          <p>
+            Elmə, sadəliyə və etibara əsaslanan texnologiyalarla uşaqların öyrənmə potensialını gücləndirmək.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="zk-subtitle">Dəyərlərimiz</h3>
+
+      <div class="zk-grid zk-values">
+        <article class="zk-card">
+          <h4>Şagird mərkəzli</h4>
+          <p>Hər qərarda şagirdin rifahı və inkişafı əsasdır.</p>
+        </article>
+        <article class="zk-card">
+          <h4>Məxfilik və etibar</h4>
+          <p>Məlumatlara hörmət və şəffaf idarəetmə.</p>
+        </article>
+        <article class="zk-card">
+          <h4>Sadəlik</h4>
+          <p>Texnologiyanı görünməz və istifadəsi rahat etmək.</p>
+        </article>
+        <article class="zk-card">
+          <h4>Elm və təsir</h4>
+          <p>Ölçülə bilən nəticələr və davamlı yaxşılaşma.</p>
+        </article>
+        <article class="zk-card">
+          <h4>Əməkdaşlıq</h4>
+          <p>Məktəblər, valideynlər və şagirdlərlə birlikdə qururuq.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .zk-story{
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(228,61,79,0.12), transparent 50%),
+                  radial-gradient(900px 500px at 110% 10%, rgba(76,110,245,0.12), transparent 40%),
+                  var(--zk-bg);
+      color: var(--zk-text);
+      padding: clamp(48px, 6vw, 96px) 16px;
+    }
+    .zk-story h2{
+      font-size: clamp(28px, 3.4vw, 40px);
+      line-height: 1.15; margin: 0 0 12px; letter-spacing:.2px;
+    }
+    .zk-subtitle{ margin:28px 0 14px; font-size:clamp(20px,2.2vw,26px); letter-spacing:.2px; color:var(--zk-text); }
+    .zk-story .zk-grid{ display:grid; gap:16px; grid-template-columns: repeat(12,1fr); }
+    .zk-story .zk-card{
+      grid-column: span 12;
+      background: linear-gradient(180deg, var(--zk-card), rgba(18,26,43,0.85));
+      border: 1px solid var(--zk-border);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      position: relative; overflow: hidden;
+    }
+    .zk-story .zk-card::after{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(300px 140px at 0% 0%, rgba(228,61,79,0.10), transparent 60%);
+      pointer-events:none; opacity:.7;
+    }
+    .zk-story .zk-card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(228,61,79,0.35);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+    .zk-story .zk-card h3, .zk-story .zk-card h4{ margin:0 0 8px; font-size:18px; letter-spacing:.2px; color:var(--zk-text); }
+    .zk-story .zk-card p{ margin:0; color:var(--zk-muted); font-size:15.5px; line-height:1.6; }
+    @media (min-width: 640px){
+      .zk-story .zk-card{ grid-column: span 6; }
+      .zk-story .zk-values .zk-card{ grid-column: span 6; }
+    }
+    @media (min-width: 960px){
+      .zk-story .zk-card{ grid-column: span 4; }
+      .zk-story .zk-values .zk-card{ grid-column: span 4; }
+    }
+  </style>
+
+  <!-- Technology -->
+  <section id="tech" class="section">
+    <div class="container">
+      <h2 class="section-title">Texnologiya</h2>
+      <div class="grid tech-grid">
+        <div class="card reveal" data-reveal="up">
+          <h3>Avadanlıq</h3>
+          <ul class="check">
+            <li>ESP32-S3, aşağı gecikməli BLE</li>
+            <li>FSR təzyiq sensoru və kalibrasiya</li>
+            <li>Yenidən doldurulan, günboyu işləyən batareya</li>
+          </ul>
+        </div>
+
+        <div class="card reveal" data-reveal="up">
+          <h3>Proqram təminatı</h3>
+          <ul class="check">
+            <li>Firebase Realtime Database + Auth</li>
+            <li>Android tətbiqi (Flutter)</li>
+            <li>Valideyn/Müəllim veb paneli</li>
+          </ul>
+        </div>
+
+        <div class="card reveal" data-reveal="up">
+          <h3>Yol xəritəsi</h3>
+          <ul class="check">
+            <li>AI öyrənmə köməkçisi (nümunələr və tövsiyələr)</li>
+            <li>Yazı göstəriciləri və inkişaf indikatorları</li>
+            <li>Məktəb administrator panelləri</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    .zk-pricing{
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(228,61,79,0.12), transparent 50%),
+                  radial-gradient(900px 500px at 110% 10%, rgba(76,110,245,0.12), transparent 40%),
+                  var(--zk-bg);
+      color: var(--zk-text);
+      padding: clamp(48px, 6vw, 96px) 16px;
+    }
+    .zk-pricing h2{
+      font-size: clamp(28px, 3.4vw, 40px);
+      line-height: 1.15; margin: 0 0 18px; letter-spacing:.2px;
+    }
+    .zk-pricing .zk-grid{ display:grid; gap:16px; grid-template-columns: repeat(12,1fr); }
+    .zk-pricing .zk-card{
+      grid-column: span 12;
+      background: linear-gradient(180deg, var(--zk-card), rgba(18,26,43,0.85));
+      border: 1px solid var(--zk-border);
+      border-radius: 16px;
+      padding: 22px 20px 20px;
+      position: relative; overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .zk-pricing .zk-card::after{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(300px 140px at 0% 0%, rgba(228,61,79,0.10), transparent 60%);
+      pointer-events:none; opacity:.7;
+    }
+    .zk-pricing .zk-card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(228,61,79,0.35);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+    .zk-ribbon{
+      position:absolute; top:14px; right:-36px;
+      background: var(--zk-accent); color:#fff; font-weight:700; font-size:12px;
+      padding: 8px 48px; transform: rotate(35deg); letter-spacing:.4px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    }
+    .zk-plan{ margin:6px 0 4px; font-size:18px; letter-spacing:.2px; color:var(--zk-text); position:relative; z-index:1; }
+    .zk-price-tag{ margin:0; font-size:clamp(34px,4vw,44px); font-weight:800; letter-spacing:.5px; position:relative; z-index:1; }
+    .zk-price-tag span{ font-weight:600; font-size:.7em; opacity:.9; margin-right:2px; }
+    .zk-sub{ margin:4px 0 14px; color:var(--zk-muted); font-size:14.5px; position:relative; z-index:1; }
+    .zk-list{ list-style:none; padding:0; margin:0 0 16px; display:grid; gap:8px; position:relative; z-index:1; }
+    .zk-list li{
+      display:flex; align-items:center; gap:10px; color:var(--zk-muted); font-size:15.5px;
+    }
+    .zk-list li::before{
+      content:"✔"; font-size:14px; line-height:1;
+      border:1px solid rgba(228,61,79,0.35); background:rgba(228,61,79,0.12);
+      width:22px; height:22px; display:grid; place-items:center; border-radius:6px;
+    }
+    .zk-btn{
+      display:inline-block; background:var(--zk-accent); color:#fff; font-weight:700;
+      padding:10px 16px; border-radius:12px; text-decoration:none;
+      transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+      position:relative; z-index:1;
+    }
+    .zk-btn:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.25); opacity:.95; }
+    @media (min-width: 640px){ .zk-pricing .zk-card{ grid-column: span 8; } }
+    @media (min-width: 960px){ .zk-pricing .zk-card{ grid-column: span 5; } }
+  </style>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">Tez-tez verilən suallar</h2>
+      <div class="faq">
+        <details class="reveal" data-reveal="up">
+          <summary>ZekInk istənilən dəftərlə işləyir?</summary>
+          <p>Bəli. ZekInk təzyiqi və hərəkəti analiz edir — sevdiyiniz kağızı və qələmi istifadə edə bilərsiniz.</p>
+        </details>
+        <details class="reveal" data-reveal="up">
+          <summary>Məlumatlarım təhlükəsizdirmi?</summary>
+          <p>Tamamilə. Məlumatlar ötürülərkən və saxlanarkən şifrələnir. Paylaşımı siz idarə edir, istənilən vaxt ixrac və ya silmə edə bilərsiniz.</p>
+        </details>
+        <details class="reveal" data-reveal="up">
+          <summary>Hansı telefonlar dəstəklənir?</summary>
+          <p>Başlanğıcda Android; iOS yol xəritəsindədir.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Bizimlə əlaqə</h2>
+      <form id="contactForm" class="card contact-form reveal" data-reveal="up" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Ad</span>
+            <input type="text" name="name" placeholder="Adınız" required />
+          </label>
+          <label>
+            <span>E-poçt</span>
+            <input type="email" name="email" placeholder="you@mail.com" required />
+          </label>
+          <label class="full">
+            <span>Mesaj</span>
+            <textarea name="message" rows="4" placeholder="İstifadə məqsədinizi qısa təsvir edin" required></textarea>
+          </label>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required />
+          <span>ZekInk tərəfindən əlaqə saxlanılmasına razılıq verirəm.</span>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Göndər</button>
+        <p id="formNote" class="form-note muted" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#">
+          <div class="brand-logo-box" aria-hidden="true">Logo</div>
+          <span class="brand-text">ZekInk</span>
+        </a>
+        <p class="muted small">© <span id="year"></span> ZekInk. Bütün hüquqlar qorunur.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Xüsusiyyətlər</a>
+        <a href="#tech">Texnologiya</a>
+        <a href="#pricing">Qiymətlər</a>
+        <a href="#faq">TTVS</a>
+        <a href="#contact">Əlaqə</a>
+      </div>
+      <div class="footer-social">
+        <a aria-label="X (Twitter)" href="#"><span class="sr-only">X</span>𝕏</a>
+        <a aria-label="LinkedIn" href="#"><span class="sr-only">LinkedIn</span>in</a>
+        <a aria-label="E-poçt" href="mailto:hello@zekink.app">✉</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" aria-label="Yuxarı qayıt">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
